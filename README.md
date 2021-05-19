@@ -1,5 +1,9 @@
 # TestApp
 
+## Releases
+
+[v1.0.0](https://github.com/ch13mob/TestApp/releases/tag/v1.0.0)
+
 ## Features
 
 - Login
