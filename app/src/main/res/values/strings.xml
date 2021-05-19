@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TestApp</string>
+
+    <string name="posts">Posts</string>
+    <string name="favourites">Favourites</string>
+    <string name="comments">Comments:</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="detail">Detail</string>
+    <string name="no_favourites_yet">No favourites yet!</string>
+    <string name="logout">Logout</string>
+    <string name="error_email">Invalid email</string>
+    <string name="error_password">Invalid password</string>
+    <string name="message_check_internet_connection">Please check your network connection and try again</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/emptyFragment">
+
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="com.ch13mob.testapp.feature.EmptyFragment" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ch13mob.testapp.feature.login.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/postsFragment"
+        android:name="com.ch13mob.testapp.feature.posts.PostsFragment"
+        android:label="@string/posts"
+        tools:layout="@layout/fragment_posts" />
+
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.ch13mob.testapp.feature.favourites.FavouritePostsFragment"
+        android:label="@string/favourites"
+        tools:layout="@layout/fragment_favourites" />
+
+    <fragment
+        android:id="@+id/postDetailFragment"
+        android:name="com.ch13mob.testapp.feature.detail.PostDetailFragment"
+        android:label="@string/detail"
+        tools:layout="@layout/fragment_post_detail" />
+
+    <action
+        android:id="@+id/actionLoginFragment"
+        app:destination="@id/loginFragment"
+        app:popUpTo="@id/emptyFragment"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/actionPostsFragment"
+        app:destination="@id/postsFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/actionPostDetailFragment"
+        app:destination="@id/postDetailFragment"
+        app:popUpTo="@id/emptyFragment"
+        app:popUpToInclusive="true" />
+
+</navigation>
